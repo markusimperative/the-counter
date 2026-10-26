@@ -1,0 +1,141 @@
+/* v0.5.1: the scene supplies context; a decision supplies three equal, reachable responses. */
+.stage{transition:filter .2s ease}
+.dialogue-content{width:100%;gap:14px}
+.dialogue-copy{width:100%;max-width:680px}
+.speech-bubble .bubble-utterance{font-size:clamp(1.25rem,1.7vw,1.625rem)}
+.dialogue-controls{display:flex;align-items:center;justify-content:center;gap:32px;width:100%;flex-shrink:0}
+.dialogue-controls .continue-button{font-size:.875rem}
+.situation-review{font-size:.875rem;max-width:none;min-height:44px;white-space:normal}
+.situation-review-control{flex-shrink:0}
+.briefing-note{font-size:.875rem;line-height:1.5}
+.review-reading-time{font-size:.875rem;margin:0;padding:12px 24px;border-bottom:1px solid #c6b88d40}
+.situation-dialog-body{font-size:1rem;line-height:1.55}
+.situation-dialog-body>h3{font-size:.875rem;font-weight:600;color:#e4c99d;margin:24px 0 8px}
+.situation-dialog-body>p{margin:0 0 16px}
+.situation-dialog-body li{margin-bottom:9px}
+.situation-dialog blockquote>span{font-size:.8125rem;letter-spacing:.04em}
+.situation-dialog blockquote>p{font-size:1.125rem}
+.situation-dialog .situation-order{font-size:1rem}
+.situation-dialog .situation-audio,.situation-dialog .text-button{font-size:.875rem}
+.reading-option{display:flex;align-items:flex-start;gap:10px;margin-top:17px;max-width:450px;font-size:.875rem;min-height:44px;cursor:pointer}
+.reading-option input{width:18px;height:18px;accent-color:#d3b584;margin:3px 0 0;flex-shrink:0}
+.accessibility-options{max-width:450px;margin-top:10px}
+.accessibility-options>summary{font-size:.875rem;min-height:44px;padding:11px 0;color:#e4d1b0;cursor:pointer}
+.accessibility-options .reading-option{margin-top:6px}
+.reading-option small{display:block;font-size:.8125rem;line-height:1.5;color:#c9cdbc;margin-top:2px}
+.reading-accommodation{max-width:450px;margin:8px 0 0;font-size:.875rem;line-height:1.5;color:#e5d4b5}
+.mode-picker label:has(:disabled){opacity:.55;cursor:default}
+.experience .dialogue-region.focused-decision{top:auto;bottom:10%;left:50%;right:auto;transform:translateX(-50%);width:min(1160px,88vw);max-height:calc(100dvh - 140px);padding:0;display:flex;flex-direction:column;gap:12px;overflow:visible}
+.decision-top{width:min(920px,100%);align-self:center;display:flex;align-items:center;justify-content:space-between;gap:24px;text-align:left;padding:9px 14px;background:#0d1911cf;border-radius:3px}
+.decision-context{outline:none;min-width:0}
+.decision-context>span{font-size:.8125rem;color:#e2c397;letter-spacing:.035em}
+.decision-context>p{font-size:1rem;line-height:1.4;color:#f5eddf;margin:3px 0 0}
+.decision-top .response-window{padding:0;flex-shrink:0;font-size:.875rem;gap:9px;align-self:center}
+.decision-top .response-window strong{font-size:1.25rem}
+.decision-top .response-window progress{width:64px}
+.decision-voice{width:100%;display:flex;align-items:center;flex-direction:column;gap:8px;min-width:0}
+.decision-voice .dialogue-copy{width:100%;max-width:720px;padding:0}
+.decision-voice .speech-bubble{padding:12px 17px 14px;grid-template-columns:38px minmax(0,1fr);gap:8px 12px}
+.decision-voice .speaker-portrait{width:38px;height:38px}
+.decision-voice .bubble-player{grid-template-columns:minmax(0,1fr) 38px}
+.decision-voice .bubble-utterance{font-size:1.375rem;line-height:1.4}
+.decision-voice .pending-question{font-size:.875rem;margin:6px 0 0}
+.decision-room-cue{font-size:.8125rem;line-height:1.4;color:#d0cfba;margin:0;min-height:1.4em}
+.decision-actions{display:flex;align-items:center;justify-content:space-between;width:100%;gap:12px;min-height:44px}
+.decision-actions .decision-prompt{font:500 .875rem/1.4 "Segoe UI",Arial,sans-serif;margin:0;color:#e9e1cf;letter-spacing:0;text-align:left}
+.focused-decision .choices{gap:12px;align-items:stretch}
+.focused-decision .choice-card{min-height:108px;padding:16px 20px 16px 16px;border-color:#c9cfb85c;background:#1b281feF;gap:10px;box-shadow:none}
+.focused-decision .choice-text{font-size:1.0625rem;line-height:1.45;padding:0}
+.focused-decision .choice-number{font-size:.75rem;line-height:1.6;padding:0}
+.focused-decision .choice-card:hover{background:#1b281fef;border-color:#c9cfb85c;transform:none}
+.focused-decision .choice-card:focus-visible{transform:none;border-color:#f3d7a6;outline:2px solid #f3d7a6}
+.focused-decision .choice-card>.arrow-icon{display:none}
+.focused-decision .controls-hint{font-size:.75rem;letter-spacing:.02em;margin:0;line-height:1.4}
+.focused-decision .choices-committing .choice-card{transform:none}
+.focused-decision .choices-committing .choice-committed{background:#3a4939;border-color:#f0cd98;opacity:1}
+.decision-context:focus-visible{outline:2px solid #f4d4a0;outline-offset:5px;border-radius:2px}
+
+@media(max-width:700px) and (orientation:portrait), (max-width:950px) and (orientation:landscape) and (max-height:520px){
+  .experience[data-decision-status="active"] .stage{filter:brightness(.3) saturate(.8);transition:filter .2s}
+  .experience .dialogue-region.focused-decision{position:absolute;inset:56px 12px max(12px,env(safe-area-inset-bottom));transform:none;width:auto;max-height:none;height:auto;display:flex;gap:8px;overflow:visible;align-items:stretch;text-align:left;justify-content:flex-start}
+  .decision-top{width:100%;gap:10px;min-height:60px;flex-shrink:0;align-items:flex-start;padding:0;background:none;border-radius:0}
+  .decision-context{flex:1}
+  .decision-context>span{font-size:.75rem;letter-spacing:0;display:block}
+  .decision-context>p{font-size:.9375rem;line-height:1.3;max-width:27ch;margin-top:4px}
+  .decision-top .response-window{width:91px;display:flex;flex-direction:column;align-items:flex-start;gap:5px;align-self:flex-start;padding-top:2px}
+  .decision-top .response-window [role="timer"]{display:flex;align-items:flex-start;flex-direction:column;gap:2px}
+  .decision-top .response-window [role="timer"]>span{font-size:.75rem;line-height:1.2}
+  .decision-top .response-window strong{font-size:1.375rem;line-height:1.1}
+  .decision-top .response-window progress{width:80px}
+  .decision-top .response-window>span{font-size:.8125rem;line-height:1.3}
+  .decision-voice{display:block;flex-shrink:0;height:94px;min-height:0}
+  .decision-voice .dialogue-copy{width:100%;max-width:none;animation:none}
+  .decision-voice .speech-bubble{grid-template-columns:32px minmax(0,1fr);gap:2px 9px;padding:9px 11px;border-radius:14px 14px 14px 4px;min-height:74px;width:100%}
+  .decision-voice .speaker-portrait{grid-row:1/3;width:32px;height:32px;align-self:start;margin-top:2px}
+  .decision-voice .bubble-identity{grid-column:2;grid-row:1;min-width:0}
+  .decision-voice .bubble-identity>strong{font-size:.8125rem;line-height:1.3}
+  .decision-voice .bubble-identity>span{display:none}
+  .decision-voice .bubble-identity>strong::after{content:' · offscreen';font-size:.75rem;font-weight:400;color:#deded0}
+  .decision-voice .bubble-customer-first .bubble-identity>strong::after,.decision-voice .bubble-customer-second .bubble-identity>strong::after{content:''}
+  .decision-voice .speech-bubble .bubble-utterance{grid-column:2;grid-row:2;font-size:1rem;line-height:1.3;max-height:2.6em;min-height:2.6em;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;scrollbar-width:none}
+  .decision-voice .pending-question{display:none}
+  .decision-room-cue{font-size:.75rem;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:4px 2px 0}
+  .decision-actions{min-height:44px;flex-shrink:0}
+  .decision-actions .decision-prompt{font-size:.8125rem}
+  .decision-actions .situation-review{font-size:.8125rem;padding:6px 0;min-height:44px}
+  .focused-decision .choices{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:repeat(3,minmax(44px,1fr));gap:8px;flex:1;min-height:0;max-height:420px}
+  .focused-decision .choice-card,.chapter-3 .focused-decision .choice-card{height:100%;min-height:44px;padding:10px 12px;gap:8px;align-items:center;border-radius:3px}
+  .focused-decision .choice-number{font-size:.75rem;line-height:1.4;align-self:flex-start;margin-top:2px}
+  .focused-decision .choice-text{font-size:1rem;line-height:1.3;overflow:visible}
+  .focused-decision .controls-hint{display:none}
+  .experience[data-decision-status="active"]>.sound-caption{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%)}
+  .dialogue-controls{gap:20px;justify-content:space-between}
+  .dialogue-controls .continue-button{min-width:125px;font-size:.875rem;gap:10px}
+  .dialogue-controls .situation-review{font-size:.8125rem}
+  .situation-dialog{width:calc(100vw - 20px);max-height:calc(100dvh - 20px)}
+  .situation-dialog>header{padding:8px 13px}.situation-dialog h2{font-size:1.375rem}
+  .situation-dialog-body{padding:16px;font-size:1rem}
+  .situation-dialog .response-window{flex-wrap:wrap;font-size:.875rem}
+  .situation-dialog .response-window p{font-size:.875rem}
+  .situation-dialog>footer{padding:8px 13px;gap:12px}
+  .situation-dialog .text-button,.situation-dialog .situation-audio{font-size:.875rem}
+}
+@media(max-width:350px) and (orientation:portrait){
+  .experience .dialogue-region.focused-decision{inset:52px 10px 10px;gap:7px}
+  .decision-top{min-height:58px}
+  .decision-context>p{font-size:.875rem}
+  .decision-voice{height:88px}
+  .focused-decision .choice-card,.chapter-3 .focused-decision .choice-card{padding:8px 10px;gap:7px}
+  .focused-decision .choice-text{font-size:1rem;line-height:1.3}
+}
+@media(max-width:950px) and (orientation:landscape) and (max-height:520px){
+  .experience .dialogue-region.focused-decision{inset:48px 20px 12px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr;gap:10px 18px}
+  .decision-top{grid-column:1;grid-row:1;min-height:0}.decision-voice{grid-column:1;grid-row:2;align-self:start;height:auto}
+  .decision-actions{grid-column:1;grid-row:2;align-self:end}.focused-decision .choices{grid-column:2;grid-row:1/3;max-height:none}
+  .decision-voice .speech-bubble .bubble-utterance{min-height:3.9em;max-height:3.9em;-webkit-line-clamp:3}
+  .focused-decision .choice-card,.chapter-3 .focused-decision .choice-card{padding:7px 10px}.focused-decision .choice-text{font-size:1rem;line-height:1.25}
+}
+
+/* Explicit accommodation: user-selected 200% text uses Reflective, with no countdown. */
+.reading-support .speech-bubble .bubble-utterance,.reading-support .choice-text,.reading-support .dialogue-line{font-size:2rem;line-height:1.4}
+.reading-support .dialogue-region{max-height:calc(100dvh - 145px);overflow-y:auto;scroll-padding:12px}
+.reading-support .focused-decision{overflow-y:auto!important;justify-content:flex-start!important}
+.reading-support .decision-voice{height:auto;min-height:0;flex-shrink:0}
+.reading-support .decision-voice .speech-bubble .bubble-utterance{display:block;-webkit-line-clamp:unset;max-height:none;min-height:0;overflow:visible}
+.reading-support .focused-decision .choices{display:flex;flex-direction:column;flex:none;max-height:none;gap:12px}
+.reading-support .focused-decision .choice-card{height:auto;flex-shrink:0;padding:14px}
+.reading-support .decision-context>p{font-size:1.25rem}
+.reading-support .decision-actions .decision-prompt,.reading-support .situation-review,.reading-support .continue-button{font-size:1.125rem}
+.reading-support .situation-dialog-body,.reading-support .situation-dialog .situation-order,.reading-support .situation-dialog blockquote>p{font-size:2rem}
+.reading-support .situation-dialog-body h3{font-size:1.25rem}
+.reading-support .dialogue-copy{flex-shrink:0}
+.experience.reading-support .dialogue-region:not(.focused-decision){top:25dvh;bottom:60px;height:auto;max-height:none;overflow:visible}
+.reading-support .dialogue-content{height:100%;min-height:0}
+.reading-support .dialogue-content>.dialogue-copy{flex:1;min-height:0;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#aa9366 transparent}
+.reading-support .dialogue-content .bubble-utterance{max-height:none;overflow:visible}
+.reading-support .dialogue-controls{background:#111d15ef;padding:4px 0;flex-shrink:0}
+.reading-support .bubble-identity>strong{font-size:1.125rem}
+@media(max-width:950px){.experience.reading-support .dialogue-region.focused-decision{display:flex;overflow-y:auto}.reading-support .decision-top{width:100%}.reading-support .decision-voice{width:100%}.reading-support .decision-actions{width:100%;min-height:52px}}
+@media(prefers-reduced-motion:reduce){.experience[data-decision-status="active"] .stage,.focused-decision .choice-card{transition:none}}
+.reduced-motion *,.reduced-motion *::before,.reduced-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media(forced-colors:active){.focused-decision .choice-card{background:Canvas;color:CanvasText;border-color:CanvasText}.decision-context>span,.decision-context>p,.decision-actions .decision-prompt{color:CanvasText}}

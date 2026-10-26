@@ -1,0 +1,28 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "master": {
+    "file": "source/pause-neutral.png",
+    "styleReference": "source/customer-neutral.png",
+    "prompt": "Use case: illustration-story. Asset type: transparent main-customer character cutout for The Counter, a painted-realism 2.5D first-person restaurant game. Input image is STYLE, SCALE and LIGHTING reference only; create a completely different original person, not a variant of this woman. New character: a thoughtful, mildly distracted man around 43, medium brown skin, short curly black hair with a little grey at the temples, clean-shaven, modest round thin metal glasses. Wears a warm muted olive overshirt open over a rust cotton T-shirt and charcoal trousers, simple canvas messenger strap. Holds a dark smartphone loosely in his left hand near waist height; right hand relaxed. Direct attentive gaze toward the viewer, lips just parted as if speaking, calm ordinary expression, no broad smile or frown. Portrait 1024x1536. Match the reference's framing precisely: full head at top with small margin, shoulders about two-thirds width, frontal standing body, crop at mid-thigh, both hands fully within canvas, comfortable proportions, same eye-level perspective. Warm amber rim and key light from image-right, soft cool teal bounce image-left, detailed painterly textures, restrained believable realism. Actual transparent alpha background around the silhouette; no scenery, no vignette, no glow, no counter, no floor, no text or labels. This is one isolated new character, to be composited over the existing restaurant. Do not copy the woman's face, hair, clothes or gender."
+  },
+  "poses": [
+    {
+      "name": "phone",
+      "prompt": "Use case: identity-preserve. Edit this transparent main-customer cutout for a cinematic painted-realism 2.5D restaurant game. Preserve exactly the same man's identity, face proportions, age, short salt-and-pepper curls, round glasses, olive overshirt, rust T-shirt, canvas bag strap, smartphone, amber light image-right and teal bounce image-left, painterly realistic textures. Preserve the 1024x1536 canvas, head height, body scale, centered frontal camera and mid-thigh crop. True transparent alpha around silhouette, no background, no vignette, no scenery, no text or labels, no extra people. Change only the described small performance pose. Both hands and entire head remain in frame. He is looking down at the smartphone held in his left hand at lower chest height, right index finger near its screen as if checking a colleague's message. Head tilts gently down; closed mouth, thoughtful and mildly distracted. Natural shoulders and believable hands. No panic, no smile, no exaggerated expression.",
+      "file": "source/pause-phone.png",
+      "reference": "source/pause-neutral.png"
+    },
+    {
+      "name": "explain",
+      "prompt": "Use case: identity-preserve. Edit this transparent main-customer cutout for a cinematic painted-realism 2.5D restaurant game. Preserve exactly the same man's identity, face proportions, age, short salt-and-pepper curls, round glasses, olive overshirt, rust T-shirt, canvas bag strap, smartphone, amber light image-right and teal bounce image-left, painterly realistic textures. Preserve the 1024x1536 canvas, head height, body scale, centered frontal camera and mid-thigh crop. True transparent alpha around silhouette, no background, no vignette, no scenery, no text or labels, no extra people. Change only the described small performance pose. Both hands and entire head remain in frame. He looks directly toward the employee with a quietly questioning, attentive expression. His right hand opens in a small palm-up gesture at waist height; his left hand still holds the same smartphone near his waist. Mouth slightly parted, eyebrows only mildly lifted. He is clarifying what happened, neither angry nor approving. Keep torso and head centered with the smallest possible posture change.",
+      "file": "source/pause-explain.png",
+      "reference": "source/pause-neutral.png"
+    }
+  ],
+  "queue": {
+    "file": "source/queue-third.png",
+    "styleReference": "source/pause-neutral.png",
+    "prompt": "Use case: illustration-story. Asset type: transparent supporting queue character cutout for The Counter, a cinematic painted-realism 2.5D restaurant game. Reference image supplies the painterly realism, warm amber rim light from image-right and cool teal bounce from image-left only. Create a different original person: a young woman around 27, deep brown skin, dark hair in a long single braid, pale cream shirt under a muted teal jacket, black trousers, flat shoes, small shoulder tote. Full body head to toe, 1024x1536 portrait, centered, entire silhouette with margins, seen at eye level standing several metres away, turned slightly toward image-left toward a restaurant counter. Waiting neutrally, arms relaxed, calm face, no impatient scowl or broad smile. Believable proportions and natural hands. Detailed but slightly softer than the main character to sit behind him in a queue. Actual transparent alpha around silhouette; no vignette, no scene, no floor plane, no cast shadow, no labels, no text, no logos. One character only."
+  }
+}

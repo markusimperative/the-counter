@@ -1,0 +1,109 @@
+/* Ground anchors use the restaurant plate's coordinates on every viewport.
+   The aisle recedes toward the centre; the booths to its right are not floor.
+   Height and foot position change together, keeping a shared perspective. */
+.queue-person {
+  position: absolute;
+  left: var(--queue-x);
+  bottom: calc(100% - var(--queue-foot));
+  height: var(--queue-height);
+  aspect-ratio: 667 / 1000;
+  transform: translateX(-50%);
+  transform-origin: 50% 100%;
+  z-index: 4;
+  pointer-events: none;
+  user-select: none;
+  transition: left 2.4s ease, bottom 2.4s ease, height 2.4s ease, opacity 1.2s ease;
+}
+.queue-person::before {
+  content: '';
+  position: absolute;
+  left: 26%;
+  bottom: -1%;
+  width: 48%;
+  height: 3.2%;
+  background: radial-gradient(ellipse, #18180ed1, #211b1355 45%, transparent 72%);
+  border-radius: 50%;
+}
+.queue-person > img {
+  position: absolute;
+  left: 0;
+  bottom: calc(-1 * var(--foot-inset));
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(.76) saturate(.78);
+}
+/* Transparent padding ends below the shoes. Align the shoes, not the canvas. */
+.queue-person-first {
+  --queue-x: 73.2%;
+  --queue-foot: 66%;
+  --queue-height: 43%;
+  --foot-inset: 3.1%;
+}
+.queue-person-first.queue-collected {
+  left: 69%;
+  bottom: 30%;
+  opacity: 0;
+}
+.queue-person-second {
+  --queue-x: 70.3%;
+  --queue-foot: 59.5%;
+  --queue-height: 36.5%;
+  --foot-inset: 3.6%;
+  opacity: 0;
+}
+.queue-person-second.joined { opacity: 1; }
+.queue-person-second.queue-advanced {
+  --queue-x: 73.2%;
+  --queue-foot: 66%;
+  --queue-height: 43%;
+}
+.queue-person-middle {
+  --queue-x: 70.2%;
+  --queue-foot: 58.9%;
+  --queue-height: 35.7%;
+  --foot-inset: 2.7%;
+  z-index: 3;
+}
+.queue-person-far {
+  --queue-x: 67.8%;
+  --queue-foot: 53.2%;
+  --queue-height: 29.4%;
+  --foot-inset: 2.7%;
+  z-index: 2;
+}
+.queue-person-far > img { filter: brightness(.73) saturate(.75) blur(.2px); }
+.queue-person-third {
+  --queue-x: 65.7%;
+  --queue-foot: 49.3%;
+  --queue-height: 25%;
+  --foot-inset: 1.9%;
+  opacity: 0;
+  z-index: 1;
+}
+.queue-person-third.joined { opacity: 1; }
+/* A free register advances the line diagonally through the aisle. */
+.queue-moving .queue-person-second.queue-advanced {
+  --queue-x: 71.6%;
+  --queue-foot: 71%;
+  --queue-height: 48%;
+}
+.queue-moving .queue-person-middle {
+  --queue-x: 73.2%;
+  --queue-foot: 65.7%;
+  --queue-height: 42.5%;
+}
+.queue-moving .queue-person-far {
+  --queue-x: 70.2%;
+  --queue-foot: 58.9%;
+  --queue-height: 35.1%;
+}
+.queue-moving .queue-person-third {
+  --queue-x: 67.8%;
+  --queue-foot: 53.2%;
+  --queue-height: 28.9%;
+}
+@media (prefers-reduced-motion: reduce) {
+  .queue-person { transition: none; }
+}
+.reduced-motion .queue-person { transition: none; }

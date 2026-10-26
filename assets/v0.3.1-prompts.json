@@ -1,0 +1,38 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "styleReference": "source/queue-third.png",
+  "assets": [
+    {
+      "name": "queue-middle",
+      "prompt": "Use case: illustration-story. Asset type: transparent full-body supporting queue figure for The Counter, a painted-realism cinematic 2.5D restaurant game. The reference is STYLE AND LIGHTING ONLY; create a completely different original person, do not copy this woman's face, braid, clothing or pose. Match detailed painterly realism, amber key/rim light from image-right, subtle cool teal bounce from image-left. Portrait 1024x1536, full body head to toe with margins, eye-level camera, believable proportions, standing several metres away behind the main customer, turned a little toward image-left toward the counter. Neutral waiting and attention, no impatience caricature, no broad smile, no anger. Actual transparent alpha around silhouette, no scene, no vignette, no floor, no cast shadow, no labels, no text, no logos. One person only. A man around 35 with fair freckled skin, close cropped sandy hair and a short ginger beard. Wears a light oatmeal knitted crewneck, dark brown straight trousers, olive trainers and a muted burgundy canvas shoulder bag. One hand rests lightly on the bag strap, the other rests in a trouser pocket. Gaze toward the counter, relaxed closed mouth, calm ordinary face. Keep both feet and the whole head in frame.",
+      "source": "source/queue-middle.png",
+      "runtime": "../public/art/queue-middle.webp",
+      "intent": "New original supporting person; reference supplies style only",
+      "sourceSha256": "A902689D1635B46F302799AA234AE4D586586CBF1FB667350DE56C36F7F3559E",
+      "runtimeSha256": "F223ADD7CBAEDE7249A957F9085BD6987B649E8484DEC27F6983B411820845D5"
+    },
+    {
+      "name": "queue-far",
+      "prompt": "Use case: illustration-story. Asset type: transparent full-body supporting queue figure for The Counter, a painted-realism cinematic 2.5D restaurant game. The reference is STYLE AND LIGHTING ONLY; create a completely different original person, do not copy this woman's face, braid, clothing or pose. Match detailed painterly realism, amber key/rim light from image-right, subtle cool teal bounce from image-left. Portrait 1024x1536, full body head to toe with margins, eye-level camera, believable proportions, standing several metres away behind the main customer, turned a little toward image-left toward the counter. Neutral waiting and attention, no impatience caricature, no broad smile, no anger. Actual transparent alpha around silhouette, no scene, no vignette, no floor, no cast shadow, no labels, no text, no logos. One person only. A woman around 57 with deep brown skin and short natural grey curls. Wears a muted slate-blue coat over a camel knit top, dark grey trousers and simple comfortable black shoes. Carries a folded paper shopping list loosely in one hand at waist height; other hand relaxed by her side. She glances slightly toward the entrance at image-right, with a calm thoughtful expression. Keep both hands, both feet and the whole head in frame.",
+      "source": "source/queue-far.png",
+      "runtime": "../public/art/queue-far.webp",
+      "intent": "New original supporting person; reference supplies style only",
+      "sourceSha256": "91FE0910E9E67A56E9585DF97E7589BE530E7F082336EE4619363B09F7A38246",
+      "runtimeSha256": "20968C5756404E4D10FC60DC4119EA16E76CE93C4914E183E655CC18FEA7C6E1"
+    }
+  ],
+  "generatedDate": "2026-10-24",
+  "compression": {
+    "tool": "Sharp 0.35.5",
+    "height": 1000,
+    "quality": 88,
+    "alphaQuality": 100,
+    "effort": 6,
+    "hasAlpha": true,
+    "sourceDimensions": [
+      1024,
+      1536
+    ]
+  }
+}

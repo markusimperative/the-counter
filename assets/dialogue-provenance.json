@@ -1,0 +1,469 @@
+{
+  "generator": "kokoro-js 1.2.1",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "modelFiles": [
+    {
+      "file": "model_quantized.onnx",
+      "sha256": "fbae9257e1e05ffc727e951ef9b9c98418e6d79f1c9b6b13bd59f5c9028a1478"
+    }
+  ],
+  "sources": [
+    "https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX",
+    "https://github.com/hexgrad/kokoro",
+    "https://www.npmjs.com/package/kokoro-js/v/1.2.1"
+  ],
+  "quantization": "q8",
+  "sampleRate": 24000,
+  "license": "Apache-2.0",
+  "generated": "2026-10-25",
+  "cloning": false,
+  "voiceSettings": {
+    "chapter1Customer": {
+      "voice": "af_heart",
+      "speed": 1.04
+    },
+    "chapter2And3Customer": {
+      "voice": "bm_george",
+      "speed": 1
+    },
+    "you": {
+      "voice": "bm_daniel",
+      "speed": 1
+    },
+    "colleague": {
+      "voice": "bf_emma",
+      "speed": 1
+    },
+    "manager": {
+      "voice": "am_michael",
+      "speed": 1
+    },
+    "kitchen": {
+      "voice": "am_fenrir",
+      "speed": 1
+    }
+  },
+  "captionSha256": "e92adb1ed13d65ef3487e44c52a1207945c0451824990b0ef160fed96b04c943",
+  "clips": {
+    "customer-opening": {
+      "src": "/audio/dialogue/customer-opening.wav",
+      "text": "Hi. I've only got about ten minutes. Is that going to be enough?",
+      "duration": 4.05,
+      "voice": "af_heart",
+      "sha256": "c4532181e688845f89228f0d2e69066e80a24619ad1fd2319aa8e81ae794fd1f"
+    },
+    "kitchen-order-call": {
+      "src": "/audio/dialogue/kitchen-order-call.wav",
+      "text": "Order forty-seven. Ready for collection.",
+      "duration": 2.85,
+      "voice": "am_fenrir",
+      "sha256": "7162dabfc64883d614fc8e7943654b85a5539b44fe29a6441274e8bacc3ba33f"
+    },
+    "customer-hot-meal": {
+      "src": "/audio/dialogue/customer-hot-meal.wav",
+      "text": "Yes, please. The hot chicken meal.",
+      "duration": 2.7,
+      "voice": "af_heart",
+      "sha256": "560d06c418c4172cf965482e4aa49dcf3c9078d924fdfd7734885ea464185c37"
+    },
+    "kitchen-delay": {
+      "src": "/audio/dialogue/kitchen-delay.wav",
+      "text": "Grill's backed up. Thirteen minutes on hot orders.",
+      "duration": 3.275,
+      "voice": "am_fenrir",
+      "sha256": "61eda83e12194643b135453e9c01000f14fa0e20f6b4c7d7405b8f373b71634f"
+    },
+    "customer-hot-reaction": {
+      "src": "/audio/dialogue/customer-hot-reaction.wav",
+      "text": "That may be too long. I might have to leave before it's ready.",
+      "duration": 3.775,
+      "voice": "af_heart",
+      "sha256": "6d16bdb2a02df9ecdb4d6b30836da76d3925d10bda277726519f4546ceee3e2a"
+    },
+    "customer-deadline": {
+      "src": "/audio/dialogue/customer-deadline.wav",
+      "text": "I need to be back at work at 12:53. That's when my break ends.",
+      "duration": 4.425,
+      "voice": "af_heart",
+      "sha256": "dd19472dde7217568329cb3e28855aec798acadd4fdffb82846aa3ce7a4ed107"
+    },
+    "customer-pending-reaction": {
+      "src": "/audio/dialogue/customer-pending-reaction.wav",
+      "text": "That's longer than my break. Let me think for a moment.",
+      "duration": 3.25,
+      "voice": "af_heart",
+      "sha256": "f2a45aad6f01004e2c82ec2d8ea6cfb69f4334cf20fbccd846ec8f258840df5f"
+    },
+    "customer-wrap": {
+      "src": "/audio/dialogue/customer-wrap.wav",
+      "text": "A wrap, then. Not what I had in mind, but I’ll take it.",
+      "duration": 3.5,
+      "voice": "af_heart",
+      "sha256": "363a4613948d9fc726951b14c8cef76ad78ce1f834f24ac3daf6f4bf5573f486"
+    },
+    "customer-wrap-handoff": {
+      "src": "/audio/dialogue/customer-wrap-handoff.wav",
+      "text": "I'll take it with me. A napkin as well, please.",
+      "duration": 3.375,
+      "voice": "af_heart",
+      "sha256": "226814d0e2fe3110fcd57259170c38c47ef85836a3fe5a0cf29b6e589beaffc4"
+    },
+    "customer-no-response": {
+      "src": "/audio/dialogue/customer-no-response.wav",
+      "text": "I can't keep standing here without an answer. I'll step aside for now.",
+      "duration": 4.475,
+      "voice": "af_heart",
+      "sha256": "9efe088c8aa77fcfc5548b429c4de151ab51fd73281d199a4db438b597c9aed0"
+    },
+    "customer-waiting": {
+      "src": "/audio/dialogue/customer-waiting.wav",
+      "text": "I'm not sure how much longer I can wait here.",
+      "duration": 2.9,
+      "voice": "af_heart",
+      "sha256": "feed1aaf8bd4670c547c967a90d4843898321494535c27a8ec509574c2d2d234"
+    },
+    "pause-customer-decision": {
+      "src": "/audio/dialogue/pause-customer-decision.wav",
+      "text": "I'm still waiting for a reply. Please leave it unsent.",
+      "duration": 4.125,
+      "voice": "bm_george",
+      "sha256": "aff8a3d204e3d3e940e26e9784683d271535e832b8acd9924a52e71bd4fb7da6"
+    },
+    "pause-customer-request": {
+      "src": "/audio/dialogue/pause-customer-request.wav",
+      "text": "Sorry, could you wait? My colleague might want to change the third meal. Please don't send it to the kitchen yet.",
+      "duration": 7.125,
+      "voice": "bm_george",
+      "sha256": "106576cf02fc1068f41d8e3539c041c89e8f02d8c32eeefe2795a6ef231e4946"
+    },
+    "pause-colleague-pressure": {
+      "src": "/audio/dialogue/pause-colleague-pressure.wav",
+      "text": "I've got more people waiting. That order's still tying up this till.",
+      "duration": 4.45,
+      "voice": "bf_emma",
+      "sha256": "07109e9ec533aa89894c4ac63f8742681825bf45c7f4effaf44de596ff126a9f"
+    },
+    "pause-manager-pressure": {
+      "src": "/audio/dialogue/pause-manager-pressure.wav",
+      "text": "Can we keep the line moving, please? There's a queue to the door.",
+      "duration": 4.55,
+      "voice": "am_michael",
+      "sha256": "e30e845fb4f045f278b23fac54eff4ebb09672374dee445907fd5b6db88f1173"
+    },
+    "pause-customer-keep": {
+      "src": "/audio/dialogue/pause-customer-keep.wav",
+      "text": "They're checking now. I'll keep the third meal as it is until they reply.",
+      "duration": 5.375,
+      "voice": "bm_george",
+      "sha256": "f048eda9f2384a4421301006cdff5a3188f5da9fb26727087601bdbbd5432227"
+    },
+    "pause-pickup": {
+      "src": "/audio/dialogue/pause-pickup.wav",
+      "text": "Order forty-six. Ready for collection.",
+      "duration": 2.75,
+      "voice": "am_fenrir",
+      "sha256": "ad9ac66f4501a6f0a1ef9099c83b61e347d609a1ecf688e00a5ce3e334d23911"
+    },
+    "pause-colleague-open": {
+      "src": "/audio/dialogue/pause-colleague-open.wav",
+      "text": "I'll speak to the people waiting. Your register's still tied up.",
+      "duration": 4.35,
+      "voice": "bf_emma",
+      "sha256": "116e38ce423b99bd9cd45d135dbdfec6f0583bd35665805ed88b6840be2ac716"
+    },
+    "pause-customer-refund": {
+      "src": "/audio/dialogue/pause-customer-refund.wav",
+      "text": "All right. I'll have to go through the three meals again when they're ready.",
+      "duration": 4.875,
+      "voice": "bm_george",
+      "sha256": "8a51ba80cbea26b44650189c2a3f7f33f0af779dfeb833d1944fbc88e9fdf193"
+    },
+    "pause-colleague-refund": {
+      "src": "/audio/dialogue/pause-colleague-refund.wav",
+      "text": "The refund's complete. I'll take the next person while they check.",
+      "duration": 4.275,
+      "voice": "bf_emma",
+      "sha256": "47f213e941d61a968aa57b3943322814b7107912e95cda7b9e572919da1b9202"
+    },
+    "pause-customer-ticket": {
+      "src": "/audio/dialogue/pause-customer-ticket.wav",
+      "text": "I asked you not to send it. Is the kitchen already making it?",
+      "duration": 4.525,
+      "voice": "bm_george",
+      "sha256": "ded671991bf6780d81c41d61362533150b3584d99c4ed118891e4d93333520b5"
+    },
+    "pause-colleague-hold": {
+      "src": "/audio/dialogue/pause-colleague-hold.wav",
+      "text": "All three meals are on hold. The ticket exists, but preparation hasn't started.",
+      "duration": 5.6,
+      "voice": "bf_emma",
+      "sha256": "db86ae5279ded35b7d3b1ed6a57307c803826ada8a4568e0990ce3657a5a5327"
+    },
+    "pause-no-response-colleague": {
+      "src": "/audio/dialogue/pause-no-response-colleague.wav",
+      "text": "Can you tell me where this order stands? I'll speak to the people waiting.",
+      "duration": 4.675,
+      "voice": "bf_emma",
+      "sha256": "f20308a0bd8281d0b893edb27b0c3ac659edec3b3a1d8f26abc0c4a33596a50a"
+    },
+    "pause-no-response-customer": {
+      "src": "/audio/dialogue/pause-no-response-customer.wav",
+      "text": "Please leave it unsent while we work this out.",
+      "duration": 3.5,
+      "voice": "bm_george",
+      "sha256": "14b83815e3cf8683f741a0a426d2a38b398e9f948e91a7c9e510c3884030d3b0"
+    },
+    "pause-manager-waiting": {
+      "src": "/audio/dialogue/pause-manager-waiting.wav",
+      "text": "Is this order moving, or are we still waiting?",
+      "duration": 3.6,
+      "voice": "am_michael",
+      "sha256": "7602b26a6b8c637eb813a756e01916def0adb5398bb4f81b8fb5cfc63d640d38"
+    },
+    "correction-customer-where": {
+      "src": "/audio/dialogue/correction-customer-where.wav",
+      "text": "Where are we with the order?",
+      "duration": 2.4,
+      "voice": "bm_george",
+      "sha256": "0563848ccc34ff2d0bbb123619a8bee124e994cb5a05322f65195ecf393d1233"
+    },
+    "correction-customer-request": {
+      "src": "/audio/dialogue/correction-customer-request.wav",
+      "text": "I've heard back. We only need the two chicken meals now. Could you remove the third one?",
+      "duration": 5.925,
+      "voice": "bm_george",
+      "sha256": "dc1693ecca1bfca8128192ac8b343190b5ef3a664802ce5fe38f0a32f8ebe83e"
+    },
+    "correction-opening-open": {
+      "src": "/audio/dialogue/correction-opening-open.wav",
+      "text": "You've kept it open all this time?",
+      "duration": 3.075,
+      "voice": "bm_george",
+      "sha256": "69107c50ead67bb3174da6a2d445ba5be7d9941d8406231e999f5e87203775e6"
+    },
+    "correction-opening-unanswered": {
+      "src": "/audio/dialogue/correction-opening-unanswered.wav",
+      "text": "I still haven't had an answer about the order. Can we change it now?",
+      "duration": 4.65,
+      "voice": "bm_george",
+      "sha256": "0ff62635a3ed7d31d56c55cf686d50230df0cc65024d09eecb6f199f6d992d71"
+    },
+    "correction-opening-refund": {
+      "src": "/audio/dialogue/correction-opening-refund.wav",
+      "text": "Oh, you've refunded it? I thought we were waiting.",
+      "duration": 3.575,
+      "voice": "bm_george",
+      "sha256": "8d9c2a686d3afed34bb7beeff726f47d655e3507238711d3d05da30785078e89"
+    },
+    "correction-opening-hold": {
+      "src": "/audio/dialogue/correction-opening-hold.wav",
+      "text": "You sent something through? I asked you to wait.",
+      "duration": 3.375,
+      "voice": "bm_george",
+      "sha256": "fc8802979422dc70d104f965909e2397cac3100097ea61cf4f1bda45b4b0faf5"
+    },
+    "correction-explain-open": {
+      "src": "/audio/dialogue/correction-explain-open.wav",
+      "text": "I kept all three meals open, as you asked. Your twenty-five euros is still paid. Nothing has gone to the kitchen, and this register has stayed occupied. We can remove the vegetable meal, return seven eighty, and send the two chicken meals if you confirm.",
+      "duration": 14.375,
+      "voice": "bm_daniel",
+      "sha256": "72897271c66c1ec6ee95525f7c3c0e2c9c102416da0824b7beac602fcb0afa5a"
+    },
+    "correction-explain-unanswered": {
+      "src": "/audio/dialogue/correction-explain-unanswered.wav",
+      "text": "I didn't resolve it while you waited. Your twenty-five euros is still paid, and all three meals are unsent. The register remains occupied. My colleague has only asked for context, not taken over. If you confirm, I can remove the vegetable meal, return seven eighty, and send the two chicken meals.",
+      "duration": 16.25,
+      "voice": "bm_daniel",
+      "sha256": "db7393c4661f87fec1e8ac1575b94c3b92f3c6545676feacbbbee8910d9dcb7c"
+    },
+    "correction-explain-refund": {
+      "src": "/audio/dialogue/correction-explain-refund.wav",
+      "text": "I refunded the twenty-five euros to free the register. There is no active order or kitchen ticket. For two chicken meals, we need a new order and a fresh payment of seventeen twenty. May I take that payment and send the new order?",
+      "duration": 12.725,
+      "voice": "bm_daniel",
+      "sha256": "f11d1a4f31bb34ef5f5906161dd8986c3c09f232d032408a34d359de0a7cccd3"
+    },
+    "correction-explain-hold": {
+      "src": "/audio/dialogue/correction-explain-hold.wav",
+      "text": "I sent ticket forty-nine on hold, even though you asked me not to send it. All three meals are on it, but preparation hasn't started. Your twenty-five euros is still paid. With your confirmation, I can amend that ticket, return seven eighty, and release the two meals.",
+      "duration": 14.9,
+      "voice": "bm_daniel",
+      "sha256": "a75b82b831f22b104e7ec534219af51eb9d9bdda004d1643d4e530ae936d3c14"
+    },
+    "correction-confirm-open": {
+      "src": "/audio/dialogue/correction-confirm-open.wav",
+      "text": "Yes. Remove the vegetable meal, return the seven eighty, and send the two chicken meals.",
+      "duration": 6.3,
+      "voice": "bm_george",
+      "sha256": "bcee185268937745e8ed95fe3656a7edf13e0d52b25fbc6a695ba2e8727d095c"
+    },
+    "correction-confirm-refund": {
+      "src": "/audio/dialogue/correction-confirm-refund.wav",
+      "text": "Yes. Start the new order. I authorize a new payment of seventeen twenty, and you can send the two chicken meals.",
+      "duration": 7.675,
+      "voice": "bm_george",
+      "sha256": "30286bcd6fa519a1843d994a29c8e8f7cd00339abf712b02fa7b44732ecb79b0"
+    },
+    "correction-confirm-hold": {
+      "src": "/audio/dialogue/correction-confirm-hold.wav",
+      "text": "Yes. Amend that ticket to two chicken meals, return the seven eighty, and release the hold.",
+      "duration": 6.625,
+      "voice": "bm_george",
+      "sha256": "ea5d70a2c545055d690ab875163cca5535df3f18245a27ed6ea0c6298241193c"
+    },
+    "correction-complete-open": {
+      "src": "/audio/dialogue/correction-complete-open.wav",
+      "text": "The seven eighty is returned. Order forty-nine is now two chicken meals, released to the kitchen. Preparation hasn't started.",
+      "duration": 8.275,
+      "voice": "bf_emma",
+      "sha256": "67b899f0440e54a8cf57a03bd1d741effd6a984df09cee8314c9787c7cbd0cb2"
+    },
+    "correction-complete-refund": {
+      "src": "/audio/dialogue/correction-complete-refund.wav",
+      "text": "New order fifty: seventeen twenty paid with your authorization, then sent. The earlier twenty-five-euro refund stays on record. Preparation hasn't started.",
+      "duration": 10.4,
+      "voice": "bf_emma",
+      "sha256": "0adbf8c4dcb31e4e62526b864c08c57e93de91aecea1d8fa0e46f73ba9dab760"
+    },
+    "correction-complete-hold": {
+      "src": "/audio/dialogue/correction-complete-hold.wav",
+      "text": "Ticket forty-nine is amended to two chicken meals and released. Seven eighty is returned. The original hold remains in its history. Preparation hasn't started.",
+      "duration": 10.725,
+      "voice": "bf_emma",
+      "sha256": "e80883bdb1da2d8c336f41bec866a8c88529950db160910a300062b9b7331269"
+    },
+    "correction-now-open": {
+      "src": "/audio/dialogue/correction-now-open.wav",
+      "text": "I've removed the vegetable meal and returned seven eighty. Shall I send the two chicken meals now?",
+      "duration": 6.075,
+      "voice": "bm_daniel",
+      "sha256": "397d7e90716343f21ce8c555599191e127fc7a9fd3efa95c46d1a2e0678105d1"
+    },
+    "correction-now-refund": {
+      "src": "/audio/dialogue/correction-now-refund.wav",
+      "text": "A new order for two chicken meals comes to seventeen twenty. The earlier twenty-five euros has been refunded. I'll need a fresh payment before I send it.",
+      "duration": 9.175,
+      "voice": "bm_daniel",
+      "sha256": "e1734a497888a38724589fdd8f66a20631cced91336cf75acc47cb8c101359e3"
+    },
+    "correction-now-hold": {
+      "src": "/audio/dialogue/correction-now-hold.wav",
+      "text": "I've amended ticket forty-nine to two chicken meals and returned seven eighty. It's still on hold. May I release it?",
+      "duration": 7.325,
+      "voice": "bm_daniel",
+      "sha256": "78e1f768bcba6238d61d88a3d6a15c8dc828182c90de5a6ab25d259cb5b5e23c"
+    },
+    "correction-now-confirm-open": {
+      "src": "/audio/dialogue/correction-now-confirm-open.wav",
+      "text": "Yes, send the two chicken meals.",
+      "duration": 2.825,
+      "voice": "bm_george",
+      "sha256": "14f6a15b0ca8fe8240d7c5281501944c2af6d8fea26c6876c5a8b30333e5f04f"
+    },
+    "correction-now-card": {
+      "src": "/audio/dialogue/correction-now-card.wav",
+      "text": "Let me get my card. That refund is still showing on my phone.",
+      "duration": 4.725,
+      "voice": "bm_george",
+      "sha256": "da87f55bc6a2152634e684afbf727b3aac52e3e547d84c7c167335288a01a78c"
+    },
+    "correction-now-confirm-hold": {
+      "src": "/audio/dialogue/correction-now-confirm-hold.wav",
+      "text": "Yes. You can release the two chicken meals now.",
+      "duration": 3.575,
+      "voice": "bm_george",
+      "sha256": "c4ed27dd913bb21473ba2c83fee48865d10143ad7fa5003b83600ff6202ee4b1"
+    },
+    "correction-now-result-open": {
+      "src": "/audio/dialogue/correction-now-result-open.wav",
+      "text": "Order forty-nine is released for two chicken meals. The adjustment is recorded. Preparation hasn't started.",
+      "duration": 7.275,
+      "voice": "bf_emma",
+      "sha256": "c7ddce2c5f465f3a00f5eaa60da5e4e052f48538e9e7509b9d4744689edc521e"
+    },
+    "correction-now-result-refund": {
+      "src": "/audio/dialogue/correction-now-result-refund.wav",
+      "text": "The new order is entered. Payment is pending; nothing has gone to the kitchen. I'll keep the line moving while you get your card.",
+      "duration": 7.675,
+      "voice": "bf_emma",
+      "sha256": "bf0f1c7904b5499662291ec0ab6942789b4b37a8c5f9dab4d9ae632d46dc3b3f"
+    },
+    "correction-now-result-hold": {
+      "src": "/audio/dialogue/correction-now-result-hold.wav",
+      "text": "The amended ticket is released. Its original three-meal hold is still on record. Preparation hasn't started.",
+      "duration": 7.475,
+      "voice": "bf_emma",
+      "sha256": "412fed25311b69413c8b45ab0042055bbf8283ce8f6769cee368eacd4cc4605e"
+    },
+    "correction-handoff-open": {
+      "src": "/audio/dialogue/correction-handoff-open.wav",
+      "text": "They asked us to leave three meals unsent. I kept the paid order open: twenty-five euros, no kitchen ticket, register occupied. Now they only need two chicken meals. Please confirm the change, return seven eighty, and get permission to send it.",
+      "duration": 14.05,
+      "voice": "bm_daniel",
+      "sha256": "863607557b2da911868cbdfc89cccbbbcd93801ce89595f0a5ad34ce402452c6"
+    },
+    "correction-handoff-unanswered": {
+      "src": "/audio/dialogue/correction-handoff-unanswered.wav",
+      "text": "They asked us to leave three meals unsent. I didn't resolve the situation; you intervened to ask what was happening. Twenty-five euros is still paid, no ticket exists, and the register is occupied. They now need two chicken meals. Please confirm the change, return seven eighty, and get permission to send it.",
+      "duration": 16.55,
+      "voice": "bm_daniel",
+      "sha256": "7d721415fd65973bd2b0ea7a13b202d49225ad67b396708d8f9bbc223cfd253e"
+    },
+    "correction-handoff-refund": {
+      "src": "/audio/dialogue/correction-handoff-refund.wav",
+      "text": "They asked us to leave three meals unsent. I refunded the twenty-five euros to free the register. There is no active order or kitchen ticket. Now they need two chicken meals. Please confirm a new order, fresh payment of seventeen twenty, and permission to send it.",
+      "duration": 14.8,
+      "voice": "bm_daniel",
+      "sha256": "440e1c4f9b2a0b70f1376ebad3b5081cd26750e460488c74573d51c10ae0607d"
+    },
+    "correction-handoff-hold": {
+      "src": "/audio/dialogue/correction-handoff-hold.wav",
+      "text": "They asked us not to send three meals. I sent ticket forty-nine on hold despite that request. Twenty-five euros is paid; preparation hasn't started. Now they need two chicken meals. Please confirm the amendment, return seven eighty, and get permission to release the ticket.",
+      "duration": 15.575,
+      "voice": "bm_daniel",
+      "sha256": "c2df20af5d330f6e25caea12ae2a30a34472fb7087ca0b4598e05f1c0d6a06f4"
+    },
+    "correction-accept-open": {
+      "src": "/audio/dialogue/correction-accept-open.wav",
+      "text": "I've got the paid, unsent order and the new request. I'll take responsibility here and confirm the adjustment and release with you before I continue.",
+      "duration": 9.175,
+      "voice": "bf_emma",
+      "sha256": "6cbd3e41d07154ad5c8edcd175aacb8be004cd1aa11c3eac0b1e4181c2f7acb5"
+    },
+    "correction-accept-refund": {
+      "src": "/audio/dialogue/correction-accept-refund.wav",
+      "text": "I've got the refunded order details and the new request. I'll confirm a fresh order and payment with you. Nothing will be charged or sent before that.",
+      "duration": 8.925,
+      "voice": "bf_emma",
+      "sha256": "255517a3328c9086a7a92fc40570e6ea4c748b0784ece9dc050248eafba2ffa5"
+    },
+    "correction-accept-hold": {
+      "src": "/audio/dialogue/correction-accept-hold.wav",
+      "text": "I've got ticket forty-nine on hold and the new request. I'll confirm the amendment, refund and release with you. The hold stays until then.",
+      "duration": 8.5,
+      "voice": "bf_emma",
+      "sha256": "78c1afa40a29898c3c6643d644a2c0730bbcd48c3c644d5e99bf16bf1fec35ce"
+    },
+    "correction-no-response-customer": {
+      "src": "/audio/dialogue/correction-no-response-customer.wav",
+      "text": "Could you tell me what's happening with the two meals?",
+      "duration": 3.8,
+      "voice": "bm_george",
+      "sha256": "8dba2fb97c239bf44484ac9ba4c7975da0da7576dfdeca1c90c6bea8262fd8bd"
+    },
+    "correction-no-response-colleague": {
+      "src": "/audio/dialogue/correction-no-response-colleague.wav",
+      "text": "I can see this still needs sorting out. What has happened so far?",
+      "duration": 4.475,
+      "voice": "bf_emma",
+      "sha256": "c06421342693f79e4852fbf1ff56fb2c55269d5d79da88afd4210b2da1b3b3ca"
+    },
+    "correction-colleague-waiting": {
+      "src": "/audio/dialogue/correction-colleague-waiting.wav",
+      "text": "Where are we with those two meals?",
+      "duration": 2.6,
+      "voice": "bf_emma",
+      "sha256": "ab43e31a89c2fb66f07d268d7f449eecf3e1f8afd7dcb4d567b43093e9acf163"
+    }
+  }
+}

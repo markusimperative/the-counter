@@ -1,0 +1,25 @@
+{
+  "generated": "2026-10-25",
+  "tool": "Built-in image_gen",
+  "source": "assets/source/speaker-portraits.png",
+  "runtime": "public/art/speaker-portraits.webp",
+  "purpose": "Original fictional staff and player profile portraits for dialogue bubbles",
+  "prompt": "Create a single original 2 by 2 contact sheet of four character portrait headshots for a cinematic painted-realism narrative game set in Morrow, a fictional ordinary fast-food restaurant. Square image, four perfectly equal square quadrants, no gutters, borders, text, labels, symbols or logos. Each quadrant contains exactly one distinct fictional adult staff member, head and upper shoulders, centered face, eyes toward the viewer, calm attentive natural expression, no exaggerated smile. Each portrait has identical framing: entire hair/head visible, head fills about 78 percent of its tile, chin near 78 percent of tile height, a little uniform visible below. Consistent rich hand-painted realism, detailed brushwork, believable skin and facial proportions, warm amber light from upper right and subtle cool kitchen fill, dark softly mottled olive/brown background. No photography, vector, cartoon, 3D, shiny synthetic skin or modern app UI. TOP LEFT (player behind register): South Asian man in his late twenties, medium brown skin, short softly curled black hair, clean shaven, cream shirt and dark green apron. TOP RIGHT (the player's colleague): Black woman in her early thirties, dark brown skin, natural twists tied back, small simple stud earrings, dark forest-green collared restaurant shirt. BOTTOM LEFT (manager): man in his early fifties, fair lightly weathered skin, short salt-and-pepper hair and neatly trimmed short grey beard, charcoal polo shirt. BOTTOM RIGHT (kitchen speaker): Latino man in his late thirties, medium warm skin, short black hair under a plain black kitchen cap, white chef jacket, no beard. Keep these four identities clearly distinct and equally grounded. This is an artwork sprite sheet to be clipped into small circular speaker avatars. Four isolated portraits only, no restaurant scene around them.",
+  "referenceImages": [],
+  "layout": {
+    "top-left": "You (player)",
+    "top-right": "Your colleague",
+    "bottom-left": "Manager",
+    "bottom-right": "Kitchen"
+  },
+  "encoding": {
+    "format": "WebP",
+    "width": 1024,
+    "height": 1024,
+    "quality": 88,
+    "effort": 6
+  },
+  "customerPortraits": "Existing customer-neutral.webp and pause-neutral.webp, clipped in CSS; originals unmodified.",
+  "sourceSha256": "b06fcdb2c669db9116d6ac30b957b6ff56adf469da97d9864d9d3f20e5614596",
+  "runtimeSha256": "fce1ec2167596ea8dce3e0440cba9989bb83e15cd08a6fb8e118442ed7186615"
+}

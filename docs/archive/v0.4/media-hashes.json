@@ -1,0 +1,262 @@
+[
+  {
+    "Path": "public\\art\\customer-accept.webp",
+    "Hash": "70F7623BCB8B6CBC382A37CC8A7AC538BD7DC6574B7D234CF4E07705F5BD9266"
+  },
+  {
+    "Path": "public\\art\\customer-clarify.webp",
+    "Hash": "2D0BC0DCCC169C7702B1F16FF11A398AED74008DEB30350E23AE064EC42E2434"
+  },
+  {
+    "Path": "public\\art\\customer-concern.webp",
+    "Hash": "0E01A0F4665B56A89138F5727515180F3950CD1B48FF391AA6D18FBB7E9881CC"
+  },
+  {
+    "Path": "public\\art\\customer-neutral.webp",
+    "Hash": "D6BBA9D72117DC49442F58BED1B5A052C75CD4A825EB0C18A32C95A231C8098B"
+  },
+  {
+    "Path": "public\\art\\customer-watch.webp",
+    "Hash": "63FC7E933A4CF0F9260FD725C3D807A738A3D8B678D258A9271BF710F829307A"
+  },
+  {
+    "Path": "public\\art\\foreground.webp",
+    "Hash": "106AEB264AA8F3033D3BCD49D8A9B335F651EDEE601A86013DC72AB4ECF00CDD"
+  },
+  {
+    "Path": "public\\art\\pause-explain.webp",
+    "Hash": "5F08CE1F92B153F91E9FE800FC420E9F5DA9FFFC51CC1D44A5E21B7752A310F6"
+  },
+  {
+    "Path": "public\\art\\pause-neutral.webp",
+    "Hash": "6A3D8ABBB6178EBBCA5E5EB939CABE38D1DCD0E298F717665DFE9384CA26B8E1"
+  },
+  {
+    "Path": "public\\art\\pause-phone.webp",
+    "Hash": "37FA30C1E467AFC19A2944A812DAEC105E5C25B0721C9D1D811AD94C7E4BED2F"
+  },
+  {
+    "Path": "public\\art\\queue-far.webp",
+    "Hash": "20968C5756404E4D10FC60DC4119EA16E76CE93C4914E183E655CC18FEA7C6E1"
+  },
+  {
+    "Path": "public\\art\\queue-first.webp",
+    "Hash": "F57B7246912D2A00693637C4EBC2E8965D2AB74D42A8F7C2683C678914CB8491"
+  },
+  {
+    "Path": "public\\art\\queue-middle.webp",
+    "Hash": "F223ADD7CBAEDE7249A957F9085BD6987B649E8484DEC27F6983B411820845D5"
+  },
+  {
+    "Path": "public\\art\\queue-second.webp",
+    "Hash": "7D5EFB8DD0D0525612DB53A6B047F1A28D2227A4B8EEEF442D6708C5B9AD4AB8"
+  },
+  {
+    "Path": "public\\art\\queue-third.webp",
+    "Hash": "556A1ACC20028C1C6975D6F45C6250D8F7CEF6CF0AF24C973AC643794FCCCF83"
+  },
+  {
+    "Path": "public\\art\\restaurant.webp",
+    "Hash": "F34ADBB71EF595049D993A95D99A91B1BDB96BECF3B98287C5332107E01ABAE6"
+  },
+  {
+    "Path": "public\\art\\wrap.webp",
+    "Hash": "E746E12929F0BC8C99DDC9F9E0AD025A248952A0163258F1AE317A5F97D7F2DE"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-accept-hold.wav",
+    "Hash": "78C1AFA40A29898C3C6643D644A2C0730BBCD48C3C644D5E99BF16BF1FEC35CE"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-accept-open.wav",
+    "Hash": "6CBD3E41D07154AD5C8EDCD175AACB8BE004CD1AA11C3EAC0B1E4181C2F7ACB5"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-accept-refund.wav",
+    "Hash": "255517A3328C9086A7A92FC40570E6EA4C748B0784ECE9DC050248EAFBA2FFA5"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-complete-hold.wav",
+    "Hash": "E80883BDB1DA2D8C336F41BEC866A8C88529950DB160910A300062B9B7331269"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-complete-open.wav",
+    "Hash": "67B899F0440E54A8CF57A03BD1D741EFFD6A984DF09CEE8314C9787C7CBD0CB2"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-complete-refund.wav",
+    "Hash": "0ADBF8C4DCB31E4E62526B864C08C57E93DE91AECEA1D8FA0E46F73BA9DAB760"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-confirm-hold.wav",
+    "Hash": "EA5D70A2C545055D690AB875163CCA5535DF3F18245A27ED6EA0C6298241193C"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-confirm-open.wav",
+    "Hash": "BCEE185268937745E8ED95FE3656A7EDF13E0D52B25FBC6A695BA2E8727D095C"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-confirm-refund.wav",
+    "Hash": "30286BCD6FA519A1843D994A29C8E8F7CD00339ABF712B02FA7B44732ECB79B0"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-customer-request.wav",
+    "Hash": "DC1693ECCA1BFCA8128192AC8B343190B5EF3A664802CE5FE38F0A32F8EBE83E"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-customer-where.wav",
+    "Hash": "0563848CCC34FF2D0BBB123619A8BEE124E994CB5A05322F65195ECF393D1233"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-explain-hold.wav",
+    "Hash": "A75B82B831F22B104E7EC534219AF51EB9D9BDDA004D1643D4E530AE936D3C14"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-explain-open.wav",
+    "Hash": "72897271C66C1EC6EE95525F7C3C0E2C9C102416DA0824B7BEAC602FCB0AFA5A"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-explain-refund.wav",
+    "Hash": "F11D1A4F31BB34EF5F5906161DD8986C3C09F232D032408A34D359DE0A7CCCD3"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-handoff-hold.wav",
+    "Hash": "C2DF20AF5D330F6E25CAEA12AE2A30A34472FB7087CA0B4598E05F1C0D6A06F4"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-handoff-open.wav",
+    "Hash": "863607557B2DA911868CBDFC89CCCBBBCD93801CE89595F0A5AD34CE402452C6"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-handoff-refund.wav",
+    "Hash": "440E1C4F9B2A0B70F1376EBAD3B5081CD26750E460488C74573D51C10AE0607D"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-now-card.wav",
+    "Hash": "DA87F55BC6A2152634E684AFBF727B3AAC52E3E547D84C7C167335288A01A78C"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-now-confirm-hold.wav",
+    "Hash": "C4ED27DD913BB21473BA2C83FEE48865D10143AD7FA5003B83600FF6202EE4B1"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-now-confirm-open.wav",
+    "Hash": "14F6A15B0CA8FE8240D7C5281501944C2AF6D8FEA26C6876C5A8B30333E5F04F"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-now-hold.wav",
+    "Hash": "78E1F768BCBA6238D61D88A3D6A15C8DC828182C90DE5A6AB25D259CB5B5E23C"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-now-open.wav",
+    "Hash": "397D7E90716343F21CE8C555599191E127FC7A9FD3EFA95C46D1A2E0678105D1"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-now-refund.wav",
+    "Hash": "E1734A497888A38724589FDD8F66A20631CCED91336CF75ACC47CB8C101359E3"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-now-result-hold.wav",
+    "Hash": "412FED25311B69413C8B45AB0042055BBF8283CE8F6769CEE368EACD4CC4605E"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-now-result-open.wav",
+    "Hash": "C7DDCE2C5F465F3A00F5EAA60DA5E4E052F48538E9E7509B9D4744689EDC521E"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-now-result-refund.wav",
+    "Hash": "BF0F1C7904B5499662291EC0AB6942789B4B37A8C5F9DAB4D9AE632D46DC3B3F"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-opening-hold.wav",
+    "Hash": "FC8802979422DC70D104F965909E2397CAC3100097EA61CF4F1BDA45B4B0FAF5"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-opening-open.wav",
+    "Hash": "69107C50EAD67BB3174DA6A2D445BA5BE7D9941D8406231E999F5E87203775E6"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\correction-opening-refund.wav",
+    "Hash": "8D9C2A686D3AFED34BB7BEEFF726F47D655E3507238711D3D05DA30785078E89"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\customer-deadline.wav",
+    "Hash": "DD19472DDE7217568329CB3E28855AEC798ACADD4FDFFB82846AA3CE7A4ED107"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\customer-hot-meal.wav",
+    "Hash": "560D06C418C4172CF965482E4AA49DCF3C9078D924FDFD7734885EA464185C37"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\customer-hot-reaction.wav",
+    "Hash": "6D16BDB2A02DF9ECDB4D6B30836DA76D3925D10BDA277726519F4546CEEE3E2A"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\customer-opening.wav",
+    "Hash": "C4532181E688845F89228F0D2E69066E80A24619AD1FD2319AA8E81AE794FD1F"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\customer-pending-reaction.wav",
+    "Hash": "F2A45AAD6F01004E2C82EC2D8EA6CFB69F4334CF20FBCCD846EC8F258840DF5F"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\customer-wrap-handoff.wav",
+    "Hash": "226814D0E2FE3110FCD57259170C38C47EF85836A3FE5A0CF29B6E589BEAFFC4"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\customer-wrap.wav",
+    "Hash": "363A4613948D9FC726951B14C8CEF76AD78CE1F834F24AC3DAF6F4BF5573F486"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\kitchen-delay.wav",
+    "Hash": "61EDA83E12194643B135453E9C01000F14FA0E20F6B4C7D7405B8F373B71634F"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\kitchen-order-call.wav",
+    "Hash": "7162DABFC64883D614FC8E7943654B85A5539B44FE29A6441274E8BACC3BA33F"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\pause-colleague-hold.wav",
+    "Hash": "DB86AE5279DED35B7D3B1ED6A57307C803826ADA8A4568E0990CE3657A5A5327"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\pause-colleague-open.wav",
+    "Hash": "116E38CE423B99BD9CD45D135DBDFEC6F0583BD35665805ED88B6840BE2AC716"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\pause-colleague-pressure.wav",
+    "Hash": "07109E9EC533AA89894C4AC63F8742681825BF45C7F4EFFAF44DE596FF126A9F"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\pause-colleague-refund.wav",
+    "Hash": "47F213E941D61A968AA57B3943322814B7107912E95CDA7B9E572919DA1B9202"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\pause-customer-decision.wav",
+    "Hash": "AFF8A3D204E3D3E940E26E9784683D271535E832B8ACD9924A52E71BD4FB7DA6"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\pause-customer-keep.wav",
+    "Hash": "F048EDA9F2384A4421301006CDFF5A3188F5DA9FB26727087601BDBBD5432227"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\pause-customer-refund.wav",
+    "Hash": "8A51BA80CBEA26B44650189C2A3F7F33F0AF779DFEB833D1944FBC88E9FDF193"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\pause-customer-request.wav",
+    "Hash": "106576CF02FC1068F41D8E3539C041C89E8F02D8C32EEEFE2795A6EF231E4946"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\pause-customer-ticket.wav",
+    "Hash": "DED671991BF6780D81C41D61362533150B3584D99C4ED118891E4D93333520B5"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\pause-manager-pressure.wav",
+    "Hash": "E30E845FB4F045F278B23FAC54EFF4EBB09672374DEE445907FD5B6DB88F1173"
+  },
+  {
+    "Path": "public\\audio\\dialogue\\pause-pickup.wav",
+    "Hash": "AD9AC66F4501A6F0A1EF9099C83B61E347D609A1ECF688E00A5CE3E334D23911"
+  }
+]
